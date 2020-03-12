@@ -67,7 +67,6 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void robotInit() {
-    System.out.println("Hi how are you?");
     LiveWindow.disableAllTelemetry();
     timer = new Timer();
     chooser = new SendableChooser<String>();
