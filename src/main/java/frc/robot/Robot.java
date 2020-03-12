@@ -68,9 +68,16 @@ public class Robot extends TimedRobot {
   @Override
   public void robotInit() {
     LiveWindow.disableAllTelemetry();
-    timer = new Timer();
+
+    // Initialize a timer called timer
+    timer = new Timer(); 
+
+    // Initialize a SendableChooser called chooser that works as a SendableChooser
     chooser = new SendableChooser<String>();
+
+    // Give chooser which is a SendableChooser a default option that will start as the original item that the chooser has that can be used by the chooser for chooser stuff
     chooser.setDefaultOption("8BallRight", "8BallRight");
+    
     chooser.addOption("10BallLeft", "10BallLeft");
     chooser.addOption("6BallRight", "6BallRight");
     chooser.addOption("9BallRightTeamPass", "9BallRightTeamPass");
